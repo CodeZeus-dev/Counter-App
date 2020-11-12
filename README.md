@@ -8,3 +8,8 @@ was last updated. The functionality of the buttons is the following:
 - Decrement: Decrement the Number by 1 
 - Reset: Resets the Number back to 0
 
+How to Use the App
+------------------
+
+In order to use the app, clone this repo and execute rackup in your terminal 
+and then access your `localhost:9292` to view the app.
