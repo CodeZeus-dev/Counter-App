@@ -1,24 +1,41 @@
 <!DOCTYPE html>
+<html>
+    <head>
+      <title>Count</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <style>
+          body,h1 {font-family: "Raleway", sans-serif}
+          body, html {height: 100%}
+          .bgimg {
+              background-image: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg');
+              min-height: 100%;
+              background-position: center;
+              background-size: cover;
+          }
+      </style>
+    </head>
+    <body>
+        <div class="bgimg">
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Count</title>
-  </head>
-  <body>
-    <form action="/increment" method="post">
-      <input type="submit" value="Increment">
-    </form><br>
+            <form action="/increment" method="post">
+              <input type="submit" value="Increment">
+            </form><br>
 
-    <form action="/decrement" method="post">
-      <input type="submit" value="Decrement">
-    </form><br><br>
+            <form action="/decrement" method="post">
+              <input type="submit" value="Decrement">
+            </form><br><br>
 
-    <div id="count"><%= @counter.count %></div><br><br>
-    <div>Last Updated at: <%= @counter.time %></div><br>
+            <div id="count"><%= @counter.count %></div><br><br>
 
-    <form action="/reset" method="post">
-      <input type="submit" value="Reset">
-    </form>
-  </body>
+            <p>
+            <div>Last Updated at: <%= @counter.time %></div><br>
+            </p>
+
+            <form action="/reset" method="post">
+              <input type="submit" value="Reset">
+            </form>
+        </div>
+    </body>
 </html>
